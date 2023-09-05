@@ -265,5 +265,7 @@ pyrightconfig.json
 
 # idea files
 .idea/
+# images
+.jpg
 
 # End of https://www.toptal.com/developers/gitignore/api/python,django
