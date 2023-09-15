@@ -268,4 +268,7 @@ pyrightconfig.json
 # images
 .jpg
 
+# static
+static/
+
 # End of https://www.toptal.com/developers/gitignore/api/python,django
