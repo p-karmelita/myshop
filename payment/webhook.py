@@ -31,5 +31,5 @@ def stripe_webhook(request):
             order.stripe_id = session.payment_intent
             order.save()
             payment_completed.delay(order.id)
-            
+
     return HttpResponse(status=200)
