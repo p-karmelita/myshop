@@ -53,11 +53,11 @@ class Migration(migrations.Migration):
                 ("price", models.DecimalField(decimal_places=2, max_digits=10)),
                 ("quantity", models.PositiveIntegerField(default=1)),
                 (
-                    "order",
+                    "orders",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
                         related_name="items",
-                        to="orders.order",
+                        to="orders.orders",
                     ),
                 ),
                 (
@@ -71,7 +71,7 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.AddIndex(
-            model_name="order",
+            model_name="orders",
             index=models.Index(
                 fields=["-created"], name="orders_orde_created_743fca_idx"
             ),

@@ -10,7 +10,7 @@ from orders.models import Order
 @shared_task
 def payment_completed(order_id):
     """
-    sending email after succesful order
+    sending email after succesful orders
     """
     order = Order.objects.get(id=order_id)
     subject = f'My shop - invoice nr {order.id}'
@@ -19,7 +19,7 @@ def payment_completed(order_id):
                          message,
                          'admin@myshop.com',
                          [order.email])
-    html = render_to_string('orders/order/pdf.html', {'order': order})
+    html = render_to_string('orders/order/pdf.html', {'orders': order})
     out = BytesIO()
     stylesheets = [weasyprint.CSS(settings.STATIC_ROOT / 'css/pdf.css')]
     weasyprint.HTML(string=html).write_pdf(out,

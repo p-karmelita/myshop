@@ -32,7 +32,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -118,8 +117,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = "en"
 
 LANGUAGES = [
-    ('pl', 'polish'),
-    ('en', 'english'),
+    ('pl', _('polish')),
+    ('en', _('english')),
 ]
 
 TIME_ZONE = "UTC"

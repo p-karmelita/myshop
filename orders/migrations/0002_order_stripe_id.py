@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='order',
+            model_name='orders',
             name='stripe_id',
             field=models.CharField(blank=True, max_length=250),
         ),
