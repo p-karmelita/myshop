@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-04 16:30+0200\n"
+"POT-Creation-Date: 2023-10-06 01:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,70 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: cart/forms.py:11
+msgid "Quantity"
+msgstr ""
+
+#: coupons/forms.py:6
+msgid "Coupon"
+msgstr ""
+
 #: myshop/settings.py:120
 msgid "polish"
 msgstr ""
 
 #: myshop/settings.py:121
 msgid "english"
+msgstr ""
+
+#: shop/templates/shop/base.html:7
+msgid "Mój sklep"
+msgstr ""
+
+#: shop/templates/shop/base.html:12
+msgid "My shop "
+msgstr ""
+
+#: shop/templates/shop/base.html:17
+msgid "Cart"
+msgstr ""
+
+#: shop/templates/shop/base.html:21
+#, python-format
+msgid ""
+"\n"
+"                %(items)s item, %(total)s PLN\n"
+"                "
+msgid_plural ""
+"\n"
+"                %(items)s items, %(total)s PLN\n"
+"                "
+msgstr[0] ""
+msgstr[1] ""
+
+#: shop/templates/shop/base.html:27
+msgid "Cart is empty"
+msgstr ""
+
+#: shop/templates/shop/product/detail.html:22
+msgid "Add to cart"
+msgstr ""
+
+#: shop/templates/shop/product/detail.html:28
+msgid "People who bought this also bought"
+msgstr ""
+
+#: shop/templates/shop/product/list.html:6
+#: shop/templates/shop/product/list.html:24
+msgid "Products"
+msgstr ""
+
+#: shop/templates/shop/product/list.html:11
+msgid "Categories"
+msgstr ""
+
+#: shop/templates/shop/product/list.html:14
+msgid "All"
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/click/_termui_impl.py:518
